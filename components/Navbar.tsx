@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "../assets/img-s.webp";
-import Image from "next/image";
 
 export function Navbar() {
   const [activeSection, setActiveSection] = useState("inicio");
@@ -38,7 +37,6 @@ export function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -56,13 +54,7 @@ export function Navbar() {
                 <Menu className="w-6 h-6" />
               )}
             </button>
-            <Image
-              src={Logo.src}
-              alt="Papelería Doble T"
-              className="w-12 h-12"
-              width={200}
-              height={200}
-            />
+
             <span className="font-heading font-bold text-2xl text-primary hidden sm:block">
               Doble T
             </span>

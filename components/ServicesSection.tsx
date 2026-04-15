@@ -13,41 +13,56 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="servicios" className="py-24 bg-primary/5">
+    <section
+      id="servicios"
+      className="py-24 bg-primary/5"
+      aria-label="Servicios de diseño gráfico y papelería personalizada en La Habana"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-primary/10 flex flex-col md:flex-row items-center gap-12">
+          {/* TEXT */}
           <div className="flex-1 space-y-6 text-center md:text-left">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto md:mx-0">
               <Paintbrush className="w-8 h-8 text-primary" />
             </div>
 
+            {/* SEO H2 OPTIMIZADO */}
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900">
-              Servicios de Diseño
+              Servicios de papelería y diseño personalizado en La Habana
             </h2>
 
+            {/* COPY OPTIMIZADO SEO */}
             <p className="text-gray-600 text-lg max-w-xl mx-auto md:mx-0">
-              ¿No encuentras exactamente lo que buscas? Nuestro equipo de diseño
-              está listo para crear la papelería de tus sueños. Desde logotipos
-              para emprendimientos hasta libretas 100% personalizadas para
-              eventos especiales.
+              Creamos <strong>agendas personalizadas en La Habana</strong>,
+              libretas, tarjetas y diseños únicos para emprendedores y eventos
+              en Cuba. Si tienes una idea, nuestro equipo la convierte en un
+              producto físico listo para imprimir.
             </p>
 
+            <p className="text-gray-600 text-lg max-w-xl mx-auto md:mx-0">
+              Desde <strong>papelería personalizada</strong> hasta identidad
+              visual para negocios, trabajamos contigo por WhatsApp para crear
+              exactamente lo que necesitas.
+            </p>
+
+            {/* CTA */}
             <div className="pt-4 flex justify-center md:justify-start">
               <button
                 onClick={handleServiceInquiry}
                 className="bg-accent hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 transition-colors shadow-lg"
               >
                 <MessageCircle className="w-6 h-6" />
-                Consultar por WhatsApp
+                Solicitar diseño por WhatsApp
               </button>
             </div>
           </div>
 
+          {/* IMAGE */}
           <div className="flex-1 w-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src={ImageServices.src}
-                alt="Servicios de diseño personalizado en la Habana, Cuba"
+                alt="Servicios de diseño de agendas personalizadas y papelería en La Habana Cuba"
                 width={600}
                 height={700}
                 className="w-full h-auto object-cover"

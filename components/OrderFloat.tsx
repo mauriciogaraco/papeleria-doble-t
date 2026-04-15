@@ -71,7 +71,7 @@ export function OrderFloat() {
                       alt={item.name}
                       className="w-full h-full object-cover"
                       width={400}
-                      height={400}
+                      height={500}
                     />
                   </div>
                   <div className="flex-1 flex flex-col justify-between">

@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tudominio.com"), // IMPORTANTE cuando tengas dominio
+  metadataBase: new URL("https://papeleria-doble-t.vercel.app"),
 
   title: {
     default: "Agendas Personalizadas en La Habana | Papelería Doble T",
@@ -36,12 +36,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Papelería Doble T" }],
 
   creator: "Papelería Doble T",
-
+  icons: {
+    icon: "/logo.ico",
+    shortcut: "/logo.ico",
+    apple: "/logo.ico",
+  },
   openGraph: {
     title: "Agendas Personalizadas en La Habana | Papelería Doble T",
     description:
       "Diseña tu agenda personalizada en La Habana. Entregas rápidas y diseños únicos.",
-    url: "https://tudominio.com",
+    url: "https://papeleria-doble-t.vercel.app",
     siteName: "Papelería Doble T",
     locale: "es_CU",
     type: "website",
@@ -77,8 +81,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Papelería Doble T",
-              image: "https://tudominio.com/logo.webp",
-              url: "https://tudominio.com",
+              image: "https://papeleria-doble-t.vercel.app/logo.webp",
+              url: "https://papeleria-doble-t.vercel.app",
               telephone: "+5363277661",
               address: {
                 "@type": "PostalAddress",
